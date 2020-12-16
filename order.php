@@ -18,7 +18,7 @@ foreach ($_POST as $key => $value) {
 }
 
 $burger = new Burger();
-$user = $burger->getUserByEmail();
+$user = $burger->getUserByEmail($email);
 if ($user) {
     $userId = $user[id];
 //    должен вернуть id заказа
@@ -26,6 +26,7 @@ if ($user) {
 
     $burger->incOrders();
     $orders_count = $user[orders_count] + 1;
+
 
     //дату заказа запишем через sql
 

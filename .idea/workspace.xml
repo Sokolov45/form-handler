@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/burger.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/burger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/db.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -60,7 +61,11 @@
       <workItem from="1607861176299" duration="499000" />
       <workItem from="1607861742539" duration="2977000" />
       <workItem from="1607876481954" duration="3634000" />
-      <workItem from="1607959304221" duration="5782000" />
+      <workItem from="1607959304221" duration="6096000" />
+      <workItem from="1608040396348" duration="3676000" />
+      <workItem from="1608046003340" duration="595000" />
+      <workItem from="1608126716139" duration="363000" />
+      <workItem from="1608128105165" duration="1413000" />
     </task>
     <servers />
   </component>

@@ -32,6 +32,11 @@ class Db
         return self::$instance;
     }
 
+    public function getConnection()
+    {
+        $dbh = new PDO("mysql:host= HOST;dbname= DB_NAME", USER, PASS);
+        $query = SELECT * FROM
+    }
 
 
 }
