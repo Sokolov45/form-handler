@@ -3,7 +3,7 @@
 class Db
 {
 
-    private $instance;
+    private static $instance;
     private $pdo;
     private $log = [];
 
@@ -34,9 +34,19 @@ class Db
 
     public function getConnection()
     {
-        $dbh = new PDO("mysql:host= HOST;dbname= DB_NAME", USER, PASS);
-        $query = SELECT * FROM
+        $host = DB_HOST;
+        $dbName = DB_NAME;
+        $sbUser= DB_USER;
+        $dbPassword = DB_PASS;
+        if  (!$this->pdo) {
+         $this->pdo = new PDO("mysql:host=$host ;dbname=$dbName DB_NAME", $sbUser, $dbPassword);
+        }
+        return $this->pdo;
     }
 
+//    получить все записи по запросу
+    public function fetchAll()
+    {
 
+    }
 }

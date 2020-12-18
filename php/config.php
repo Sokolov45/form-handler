@@ -1,6 +1,6 @@
 <?php
 
-const HOST = 'localhost';
+const DB_HOST = 'localhost';
 const DB_NAME = 'sokol';
-const USER = 'root';
-const PASS = '';
+const DB_USER = 'root';
+const DB_PASS = '';

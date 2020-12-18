@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01122e83-172a-47c6-89ef-ef23ea3787b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/burger.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/burger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/db.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +32,7 @@
       </server>
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1lbM7tqf93xbHNoZZNmnYz38Eg8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,7 +52,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="01122e83-172a-47c6-89ef-ef23ea3787b9" name="Default Changelist" comment="" />
@@ -66,11 +71,15 @@
       <workItem from="1608046003340" duration="595000" />
       <workItem from="1608126716139" duration="363000" />
       <workItem from="1608128105165" duration="1413000" />
+      <workItem from="1608186240415" duration="490000" />
+      <workItem from="1608257640447" duration="1902000" />
+      <workItem from="1608281200916" duration="718000" />
+      <workItem from="1608291554193" duration="4972000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -83,6 +92,24 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="540" y="175" key="#CLI_Interpreters" timestamp="1608292272368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="#CLI_Interpreters/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608292272368" />
+    <state x="667" y="163" key="#PHP" timestamp="1608292279339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="163" key="#PHP/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608292279339" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608292269092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608292269092" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1608296242706">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608296242706" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

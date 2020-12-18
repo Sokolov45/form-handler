@@ -4,7 +4,8 @@ class Burger
 {
     public function getUserByEmail($email)
     {
-        $query =
+        Db::getInstance();
+        $query = SELECT * FROM users WHERE
     }
 
     public function incOrders()
@@ -21,5 +22,4 @@ class Burger
     {
 
     }
-
 }
