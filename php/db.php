@@ -36,17 +36,48 @@ class Db
     {
         $host = DB_HOST;
         $dbName = DB_NAME;
-        $sbUser= DB_USER;
+        $dbUser= DB_USER;
         $dbPassword = DB_PASS;
         if  (!$this->pdo) {
-         $this->pdo = new PDO("mysql:host=$host ;dbname=$dbName DB_NAME", $sbUser, $dbPassword);
+         $this->pdo = new PDO("mysql:host=$host;dbname=$dbName", $dbUser, $dbPassword);
         }
         return $this->pdo;
     }
 
 //    получить все записи по запросу
-    public function fetchAll()
-    {
 
+    public function fetchAll($query, $opt = [])
+    {
+        $prepare = $this->getConnection()->prepare($query);
+        $res = $prepare->execute($opt);
+
+        if ($res) {
+            $array = $prepare->fetchAll(\PDO::FETCH_ASSOC);
+            return $array;
+        }
+    }
+    public function fetchOne($query, $opt = [])
+    {
+        $prepare = $this->getConnection()->prepare($query);
+        $res = $prepare->execute($opt);
+        if ($res) {
+            $array = $prepare->fetchAll(\PDO::FETCH_ASSOC);
+            return reset($array);
+        }
+    }
+
+    public function exec($query, $opt)
+    {
+        $prepare = $this->getConnection()->prepare($query);
+        $res = $prepare->execute($opt);
+        if ($res) {
+            return $this->lastInsertId();
+        }
+        return false;
+    }
+
+    public function lastInsertId()
+    {
+        return $this->getConnection()->lastInsertId();
     }
 }
