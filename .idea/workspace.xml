@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01122e83-172a-47c6-89ef-ef23ea3787b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/burger.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/burger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/db.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHP Web Page.sokol">
@@ -88,6 +88,7 @@
       <workItem from="1608438588776" duration="594000" />
       <workItem from="1608449349355" duration="570000" />
       <workItem from="1608454166446" duration="10599000" />
+      <workItem from="1608558387412" duration="676000" />
     </task>
     <servers />
   </component>
