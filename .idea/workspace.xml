@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01122e83-172a-47c6-89ef-ef23ea3787b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/burger.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/burger.php" afterDir="false" />
@@ -21,6 +22,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/order.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
+  <component name="PhpDebugGeneral" xdebug_force_break_when_no_path_mapping="false" />
   <component name="PhpServers">
     <servers>
       <server host="sokol" id="cc77263a-3e18-49a4-b163-357943796b4e" name="sokol" use_path_mappings="true">
@@ -28,9 +30,11 @@
           <mapping local-root="$PROJECT_DIR$" remote-root="sokol" />
         </path_mappings>
       </server>
+      <server host="localhost/sokol" id="6b4ebb72-1c10-4c8a-b24e-0066f6e3ede0" name="localhost/sokol" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost/sokol:80" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1lbM7tqf93xbHNoZZNmnYz38Eg8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,13 +46,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="sokol" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="sokol">
+  <component name="RunManager" selected="PHP Web Page.sokol">
+    <configuration name="XDebug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="localhost/sokol" session_id="PHPSTORM">
       <method v="2" />
     </configuration>
+    <configuration name="sokol" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost/sokol">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Remote Debug.XDebug" />
+      <item itemvalue="PHP Web Page.sokol" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -73,7 +84,10 @@
       <workItem from="1608257640447" duration="1902000" />
       <workItem from="1608281200916" duration="718000" />
       <workItem from="1608291554193" duration="4972000" />
-      <workItem from="1608384560063" duration="13285000" />
+      <workItem from="1608384560063" duration="13410000" />
+      <workItem from="1608438588776" duration="594000" />
+      <workItem from="1608449349355" duration="570000" />
+      <workItem from="1608454166446" duration="10599000" />
     </task>
     <servers />
   </component>
@@ -91,24 +105,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="540" y="175" key="#CLI_Interpreters" timestamp="1608292272368">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="175" key="#CLI_Interpreters/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608292272368" />
-    <state x="667" y="163" key="#PHP" timestamp="1608292279339">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="163" key="#PHP/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608292279339" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608292269092">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608292269092" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1608296242706">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608296242706" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -66,7 +66,7 @@ class Db
         }
     }
 
-    public function exec($query, $opt)
+    public function exec($query, $opt = [])
     {
         $prepare = $this->getConnection()->prepare($query);
         $res = $prepare->execute($opt);
