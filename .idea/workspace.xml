@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01122e83-172a-47c6-89ef-ef23ea3787b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/burger.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/burger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/db.php" afterDir="false" />
     </list>
@@ -20,7 +22,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/order.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
-  <component name="PhpDebugGeneral" xdebug_force_break_when_no_path_mapping="false" />
   <component name="PhpServers">
     <servers>
       <server host="sokol" id="cc77263a-3e18-49a4-b163-357943796b4e" name="sokol" use_path_mappings="true">
@@ -32,7 +33,7 @@
     </servers>
   </component>
   <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost/sokol:80" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1lbM7tqf93xbHNoZZNmnYz38Eg8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,11 +44,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/php/PHP_7.3-x64/ext/php_xdebug.dll" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHP Web Page.sokol">
+  <component name="RunManager" selected="PHP Remote Debug.XDebug">
     <configuration name="XDebug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="localhost/sokol" session_id="PHPSTORM">
       <method v="2" />
     </configuration>
@@ -87,6 +89,9 @@
       <workItem from="1608449349355" duration="570000" />
       <workItem from="1608454166446" duration="10599000" />
       <workItem from="1608558387412" duration="5774000" />
+      <workItem from="1608693041893" duration="2192000" />
+      <workItem from="1608697952760" duration="8999000" />
+      <workItem from="1608714020176" duration="4457000" />
     </task>
     <servers />
   </component>
@@ -104,6 +109,87 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="540" y="175" key="#CLI_Interpreters" timestamp="1608721778627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="#CLI_Interpreters/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721778627" />
+    <state x="618" y="379" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1608719563277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="618" y="379" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608719563277" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608721774335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721774335" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1608721665586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665586" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1608721665586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665586" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1608721665586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665586" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1608721665586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665586" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608721668513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721668513" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1608721668513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721668513" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1608721668513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721668513" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1608721668513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721668513" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1608721665495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665495" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1608721665494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665494" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1608721665494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665494" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1608721665495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721665495" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1608721779730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608721779730" />
+    <state x="1938" y="181" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1608714091013">
+      <screen x="1920" y="181" width="1600" height="860" />
+    </state>
+    <state x="1938" y="181" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/1920.181.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1608714091013" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/db.php</url>
+          <line>79</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

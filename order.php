@@ -7,17 +7,19 @@ include 'php/db.php';
 //ini_set();
 
 $email = $_POST['email'];
-$name = $_POST['name'];
-$fields = ['tel', 'street', 'home', 'korpus', 'flat', 'floor'];
-$address = [];
-foreach ($_POST as $item => $value) {
-    if ($value && in_array($item, $fields)) {
-        $address .= $value . ',';
-    }
-}
+//$name = $_POST['name'];
+//$fields = ['tel', 'street', 'home', 'korpus', 'flat', 'floor'];
+//$address = [];
+//foreach ($_POST as $item => $value) {
+//    if ($value && in_array($item, $fields)) {
+//        $address .= $value . ',';
+//    }
+//}
 
 $burger = new Burger();
 $user = $burger->getUserByEmail($email);
+var_dump($user);
+die();
 if ($user) {
     $userId = $burger->incOrders($email);
     

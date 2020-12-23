@@ -6,6 +6,7 @@ class Burger
     {
         $db = Db::getInstance();
         $query = "SELECT * FROM sokol WHERE email = :email";
-
+        $parametres = [':email' => $email];
+        $db->fetchOne($query, __METHOD__, $parametres);
     }
 }
