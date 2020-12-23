@@ -4,6 +4,8 @@ class Burger
 {
     public function getUserByEmail($email)
     {
-        $query = "INSERT INTO sokol email"
+        $db = Db::getInstance();
+        $query = "SELECT * FROM sokol WHERE email = :email";
+
     }
 }
