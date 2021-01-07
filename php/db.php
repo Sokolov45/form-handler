@@ -37,9 +37,9 @@ class Db
 
         if (!isset($this->pdo)) {
             try {
-                $pdo_connection = new PDO("mysql:host=$host;dbname=$name", $user, $password);
+                $this->pdo = new PDO("mysql:host=$host;dbname=$name", $user, $password);
                 // Определяем ошибки как исключения
-                $pdo_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 echo "Подключение прошло успешно!";
             }
             // Отлавливаем исключение
@@ -78,14 +78,13 @@ class Db
     {
         $start = microtime(true);
         $this->getConnection();
-        var_dump($this->pdo);
         $prepared = $this->pdo->prepare($query);
         $res = $prepared->execute($parametres);
         if ($res) {
             $data = $prepared->fetchAll(PDO::FETCH_ASSOC);
         } else {
             $errorInfo = $prepared->errorInfo();
-            trigger_error("{$errorInfo[0]}#{$errorInfo[1]}: " . $errorInfo[2]);
+            trigger_error("{$errorInfo[0]}#{$errorInfo[1]}:  строка с ошибкой" . $errorInfo[2]);
             return [];
         }
 
@@ -99,12 +98,16 @@ class Db
         return reset($data);
     }
 
-    public function exec()
+    public function exec($query, $parametres = [])
     {
-
+        $this->getConnection();
+        $prepared = $this->pdo->prepare($query);
+        $res = $prepared->execute($parametres);
+        $lastId = $this->pdo->lastInsertId();
+        return $lastId;
     }
 
-    public function lasrInsertId()
+    public function lastInsertId()
     {
 
     }

@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="sokol" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" editBeforeRun="true" singleton="false" server_name="localhost" start_url="/sokol">
+    <method v="2" />
+  </configuration>
+</component>

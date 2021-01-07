@@ -7,7 +7,7 @@ include 'php/db.php';
 //ini_set();
 
 $email = $_POST['email'];
-//$name = $_POST['name'];
+$name = $_POST['user-name'];
 //$fields = ['tel', 'street', 'home', 'korpus', 'flat', 'floor'];
 //$address = [];
 //foreach ($_POST as $item => $value) {
@@ -15,18 +15,18 @@ $email = $_POST['email'];
 //        $address .= $value . ',';
 //    }
 //}
-
 $burger = new Burger();
 $user = $burger->getUserByEmail($email);
-var_dump($user);
-die();
+
 if ($user) {
-    $userId = $burger->incOrders($email);
+//    $userId = $burger->incOrders($email);
+    echo "user есть";
     
 }else {
     $userId = $burger->createUser($email, $name);
-
+    var_dump($userId);
 }
+die();
 
 //дата id адресс
 $burger->addOrder();
