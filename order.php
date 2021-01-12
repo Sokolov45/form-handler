@@ -18,7 +18,7 @@ foreach ($_POST as $item=>$value) {
 }
 
 $burger = new Burger();
-$user = $burger->gerUserByEmail();
+$user = $burger->gerUserByEmail($email);
 if ($user) {
     $userId = $user['id'];
     $burger->incOrders($userId);

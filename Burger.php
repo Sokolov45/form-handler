@@ -11,5 +11,10 @@ class Burger
     {
     }
 
+    public function gerUserByEmail($email)
+    {
+
+    }
+
 
 }
