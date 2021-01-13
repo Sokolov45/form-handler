@@ -2,7 +2,7 @@
 
 include 'php/config.php';
 include 'php/db.php';
-include 'php/burger.php';
+include 'php/burger.class.php';
 
 ini_set('display_errors', 'on');
 ini_set('error_reporting', E_NOTICE|E_ALL);
@@ -18,7 +18,9 @@ foreach ($_POST as $item=>$value) {
 }
 
 $burger = new Burger();
-$user = $burger->gerUserByEmail($email);
+$user = $burger->getUserByEmail($email);
+
+die();
 if ($user) {
     $userId = $user['id'];
     $burger->incOrders($userId);
