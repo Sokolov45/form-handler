@@ -54,24 +54,25 @@ class Db
 
     public function fetchAll(string $query, $method, array $parametres = [])
     {
-        $startTime = microtime();
+        $startTime = microtime(true);
 
         /*тут нужно заюзать prepare и execute, а это методы PDO, соответственно и сразу делаю через getConnectinon
         потому что он сделан через private*/
-        $prepare = $this->pdo::prepare($query);
+        $prepare = $this->getConnection()->prepare($query);
         $res = $prepare->execute($parametres);
         if ($res) {
             $return = $prepare->fetchAll(\PDO::FETCH_ASSOC);
         }
 
-        $this->log[] = ["запрос - $query", microtime() - $startTime, "Вызван из метода - $method"];
+        $time = microtime(true) - $startTime;
+
+        $this->log[] = ["запрос - $query", "Вызван из метода - $method"];
 
         return $return;
     }
 
-    public function fetchOne($query, $method, $parametres = [])
+    public function fetchOne(string $query, $method, array $parametres = [])
     {
-        echo 'dsf';
         $startTime = microtime(true);
 
         /*тут нужно заюзать prepare и execute, а это методы PDO, соответственно и сразу делаю через getConnectinon
@@ -89,8 +90,22 @@ class Db
         return reset($return);
     }
 
-    public function exec()
+    public function exec($query, $method, $parametres)
     {
+        $startTime = microtime(true);
+
+        /*тут нужно заюзать prepare и execute, а это методы PDO, соответственно и сразу делаю через getConnectinon
+        потому что он сделан через private*/
+        $prepare = $this->getConnection()->prepare($query);
+        $res = $prepare->execute($parametres);
+        if ($res) {
+
+        $time = microtime(true) - $startTime;
+
+        $this->log[] = ["запрос - $query", $time, "Вызван из метода - $method"];
+
+        return $this->lastInsertId();
+        }
 
     }
 
@@ -99,4 +114,8 @@ class Db
 
     }
 
+    public function lastInsertId()
+    {
+        return $this->getConnection()->lastInsertId();
+    }
 }

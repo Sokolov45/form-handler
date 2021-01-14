@@ -20,17 +20,16 @@ foreach ($_POST as $item=>$value) {
 $burger = new Burger();
 $user = $burger->getUserByEmail($email);
 
-die();
 if ($user) {
     $userId = $user['id'];
     $burger->incOrders($userId);
     $ordersCount = $user['ordersCount'] + 1;
 
 }else {
-    $userId = $burger->createUser();
+    $userId = $burger->createUser($name, $email);
     $ordersCount = 1;
 }
-
+die();
 $orderNumber = $burger->addOrder($userId);
 
 echo "Заказ по адруссу $address принят.<br>
