@@ -1,7 +1,7 @@
 <?php
 
 include 'php/config.php';
-include 'php/db.php';
+include 'php/db.class.php';
 include 'php/burger.class.php';
 
 ini_set('display_errors', 'on');
