@@ -1,6 +1,5 @@
 <?php
 
-
 class Burger
 {
 
@@ -11,18 +10,18 @@ class Burger
         return $db->fetchOne($query, __METHOD__, [':email' => $email] );
     }
 
-    public function createUser($email, $name)
+    public function createUser(string $email, string $name):int 
     {
         $db = Db::getInstance();
-        $query = "INSERT INTO users (name, email) VALUES(:name, :email)";
-        return $db->exec($query, __METHOD__, [':name' => $name, ':email' => $email] );
+        $query = "INSERT INTO users (email, name) VALUES(:email, :name)";
+        return $db->exec($query, __METHOD__, [':email' => $email, ':name' => $name] );
     }
 
-    public function addOrder($userId, $address )
+    public function addOrder(int $userId, string $address ):int
     {
         $db = Db::getInstance();
-        $query = "INSERT INTO orders (userId, address, created_at) VALUES(:userId, :address, :created_at)";
-        $db->exec($query, __METHOD__, [
+        $query = "INSERT INTO orders (user_id, address, created_at) VALUES(:userId, :address, :created_at)";
+        return $db->exec($query, __METHOD__, [
             ':userId' => $userId,
             ':address' => $address,
             ':created_at' => date("Y-m-d H:i:s")
@@ -36,3 +35,6 @@ class Burger
         $db->exec($query, __METHOD__, [':userId' => $userId]);
     }
 }
+
+//getUserByEmail как указать возвращаемый тип
+//':created_at' => date("Y-m-d H:i:s") не записывает время

@@ -52,7 +52,7 @@ class Db
         return $this->pdo;
     }
 
-    public function fetchAll(string $query, $method, array $parametres = [])
+    public function fetchAll(string $query, $method, array $parametres = []):array
     {
         $startTime = microtime(true);
 
@@ -90,7 +90,7 @@ class Db
         return reset($return);
     }
 
-    public function exec($query, $method, $parametres)
+    public function exec(string $query, $method, array $parametres):int
     {
         $startTime = microtime(true);
 
@@ -119,3 +119,6 @@ class Db
         return $this->getConnection()->lastInsertId();
     }
 }
+
+
+//getConnection, fetchOne как указать возвращаемый тип

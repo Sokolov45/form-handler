@@ -19,18 +19,17 @@ foreach ($_POST as $item=>$value) {
 
 $burger = new Burger();
 $user = $burger->getUserByEmail($email);
-var_dump($user);
 if ($user) {
     $userId = $user['id'];
     $burger->incOrders($userId);
-    $ordersCount = $user['ordersCount'] + 1;
+    $ordersCount = $user['orders_count'] + 1;
 
 }else {
-    $userId = $burger->createUser($name, $email);
+    $userId = $burger->createUser($email, $name);
     $ordersCount = 1;
 }
 
-$orderNumber = $burger->addOrder($userId);
+$orderNumber = $burger->addOrder($userId, $address);
 
 echo "Заказ по адруссу $address принят.<br>
     Номер вашего заказа $orderNumber.<br>
