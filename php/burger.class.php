@@ -14,25 +14,34 @@ class Burger
     {
         $db = Db::getInstance();
         $query = "INSERT INTO users (email, name) VALUES(:email, :name)";
-        return $db->exec($query, __METHOD__, [':email' => $email, ':name' => $name] );
+        $result = $db->exec($query, __METHOD__, [':email' => $email, ':name' => $name] );
+        if (!$result) {
+            return false;
+        }else {
+            return $db->lastInsertId();
+        }
     }
 
     public function addOrder(int $userId, string $address ):int
     {
         $db = Db::getInstance();
         $query = "INSERT INTO orders (user_id, address, created_at) VALUES(:userId, :address, :created_at)";
-        return $db->exec($query, __METHOD__, [
+        $result = $db->exec($query, __METHOD__, [
             ':userId' => $userId,
             ':address' => $address,
-//            ':created_at' => date("Y-m-d H:i:s")
-            ':created_at' => date('Y-m-d H:i:0')
+            ':created_at' => date('Y-m-d H:i:s')
         ]);
+        if (!$result) {
+            return false;
+        }else {
+            return $db->lastInsertId();
+        }
     }
 
     public function incOrders(int $userId)
     {
         $db = Db::getInstance();
-        $query = "UPDATE users SET orders_count = orders_count + 1 WHERE id = :userId";
+        $query = "UPDATE users SET orders_count = orders_count + 1 WHERE id = $userId";
         $db->exec($query, __METHOD__, [':userId' => $userId]);
     }
 }

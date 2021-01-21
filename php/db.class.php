@@ -60,13 +60,17 @@ class Db
         потому что он сделан через private*/
         $prepare = $this->getConnection()->prepare($query);
         $res = $prepare->execute($parametres);
-        if ($res) {
-            $return = $prepare->fetchAll(\PDO::FETCH_ASSOC);
+        if (!$res) {
+            $errorInfo = $prepare->errorInfo();
+            trigger_error("{$errorInfo[0]}#{$errorInfo[1]}: " . $errorInfo[2]);
+            return [];
         }
 
+        $return = $prepare->fetchAll(\PDO::FETCH_ASSOC);
+        $affectedRows = $prepare->rowCount();
         $time = microtime(true) - $startTime;
 
-        $this->log[] = ["запрос - $query", "Вызван из метода - $method"];
+        $this->log[] = ["запрос - $query", "Вызван из метода - $method", "время - $time", "строк затронуто - $affectedRows"];
 
         return $return;
     }
@@ -90,22 +94,24 @@ class Db
         return reset($return);
     }
 
-    public function exec(string $query, $method, array $parametres):int
+    public function exec(string $query, $method, array $parametres = [])
     {
         $startTime = microtime(true);
 
         /*тут нужно заюзать prepare и execute, а это методы PDO, соответственно и сразу делаю через getConnectinon
         потому что он сделан через private*/
-        $prepare = $this->getConnection()->prepare($query);
-        $res = $prepare->execute($parametres);
-        if ($res) {
-
+        $prepared = $this->getConnection()->prepare($query);
+        $res = $prepared->execute($parametres);
+        if (!$res) {
+            $errorInfo = $prepared->errorInfo();
+            trigger_error("{$errorInfo[0]}#{$errorInfo[1]}: " . $errorInfo[2]);
+            return [];
+        }
         $time = microtime(true) - $startTime;
 
         $this->log[] = ["запрос - $query", $time, "Вызван из метода - $method"];
-
-        return $this->lastInsertId();
-        }
+        $affectedRows = $prepared->rowCount();
+        return $affectedRows;
 
     }
 
@@ -122,3 +128,5 @@ class Db
 
 
 //getConnection, fetchOne как указать возвращаемый тип
+//не  использовал rowCount(); - получилось что ecex ничё не возвращал и следовала ошибка
+//забываешь обрабатывать ошибки
