@@ -24,7 +24,8 @@ class Burger
         return $db->exec($query, __METHOD__, [
             ':userId' => $userId,
             ':address' => $address,
-            ':created_at' => date("Y-m-d H:i:s")
+//            ':created_at' => date("Y-m-d H:i:s")
+            ':created_at' => date('Y-m-d H:i:0')
         ]);
     }
 
@@ -37,4 +38,3 @@ class Burger
 }
 
 //getUserByEmail как указать возвращаемый тип
-//':created_at' => date("Y-m-d H:i:s") не записывает время
