@@ -35,3 +35,6 @@ echo "Заказ по адруссу $address принят.<br>
     Номер вашего заказа $orderNumber.<br>
     Это ваш $ordersCount-й заказ";
 
+echo "<hr>";
+$db = Db::getInstance();
+$db->getLogs();

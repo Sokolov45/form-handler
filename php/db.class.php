@@ -89,7 +89,8 @@ class Db
 
         $time = microtime(true) - $startTime;
 
-        $this->log[] = ["запрос - $query", "Вызван из метода - $method"];
+        $affectedRows = $prepare->rowCount();
+        $this->log[] = ["запрос - $query", "Вызван из метода - $method", "время - $time", "строк затронуто - $affectedRows"];
 
         return reset($return);
     }
@@ -109,15 +110,21 @@ class Db
         }
         $time = microtime(true) - $startTime;
 
-        $this->log[] = ["запрос - $query", $time, "Вызван из метода - $method"];
         $affectedRows = $prepared->rowCount();
+        $this->log[] = ["запрос - $query", "Вызван из метода - $method", "время - $time", "строк затронуто - $affectedRows"];
+
         return $affectedRows;
 
     }
 
     public function getLogs()
     {
-
+        if (!$this->log) {
+            return '';
+        }
+        echo '<pre>';
+        var_dump($this->log);
+        echo '</pre>';
     }
 
     public function lastInsertId()
@@ -128,5 +135,5 @@ class Db
 
 
 //getConnection, fetchOne как указать возвращаемый тип
-//не  использовал rowCount(); - получилось что ecex ничё не возвращал и следовала ошибка
+//не  использовал rowCount(); - получилось что метод exec ничё не возвращал и следовала ошибка
 //забываешь обрабатывать ошибки
